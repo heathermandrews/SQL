@@ -26,18 +26,31 @@ VALUES
     (15, 'Cozy Throw Blanket', 'Furnishings', 24.99, 100, 4.2);
 
 
+## Analysis
+
+
+## Order the items by price
 
 SELECT item_name, price
 FROM superstore
 ORDER BY price;
 
-SELECT SUM(price)
+
+## What is the average price of items in the superstore.
+
+SELECT AVG(price)
 FROM superstore;
+
+
+## Select the average price of Kitchen Supplies.
 
 SELECT AVG(price), category
 FROM superstore
 WHERE category = "Kitchen Supplies";
 
-SELECT price, category
+
+## How many air purifiers are in stock?
+
+SELECT COUNT(item_name)
 FROM superstore
-ORDER BY price desc;
+WHERE item_name = "Air Purifier";
