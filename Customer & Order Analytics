@@ -4,7 +4,6 @@ SELECT * FROM BIT_DB.JanSales LIMIT 20;
 
 SELECT * FROM BIT_DB.customers
 WHERE length(order_id) = 6
-
 AND order_id <> 'Order ID';
 
 
